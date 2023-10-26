@@ -1,0 +1,127 @@
+{
+    "name": "Samuel J Cross",
+    "address": "Flat 18 Pear Tree Court, Holmer Green, High Wycombe, England HP15 6RL",
+    "telephone": "07708 220 359",
+    "website": "http://sam.cross.contact",
+    "email": "me@samcross.uk",
+    "personalProfile": "I am an outgoing and confident individual with a broad range of academic and social interests. I can be self-sufficient but also enjoy working with others. I love learning and developing myself. I am happiest when developing new skills and capabilities. I have learned to overcome my dyslexia by using text to speech and speech recognition tools, and developed my own shortcuts and scripts, to help me read, write and spell with greater accuracy. It may take me longer but with the emergence of new AI tools this has become far less of an issue. I am able to produce degree level material when required.",
+    "experience": [
+       {
+          "position": "Senior PHP Developer",
+          "employer": "Onbuy",
+          "startDate": 1682899200,  
+          "endDate": 1698278400,    
+          "description": "I joined the revenue team, which managed the financial processes for their retail platform. The system used microservices predominantly developed in Laravel for which I have significant development experience. My main contribution was the development and launch of the cashback feature. Latterly, I was required to integrate a third party advertising service with their legacy monolith which was based on a custom PHP framework."
+       },
+       {
+          "position": "Full Stack Developer",
+          "employer": "Narrative Industries",
+          "startDate": 1688419200,  
+          "endDate": 1696108800,    
+          "description": "For this remote role I worked on a rewrite of an existing retail website for a big self storage brand. The website was split into two parts, a CMS using Sulu and an eCommerce web platform using Sylius. Both were based on the Symfony framework and used Vue.js for dynamic content."
+       },
+       {
+          "position": "Full Stack Developer",
+          "employer": "Candid",
+          "startDate": 1669939200,  
+          "endDate": 1672368000,    
+          "description": "I worked remotely to improve and refactor internal systems that insurance agents use. Built using Laravel and Vue. I also worked on a prototype website using Strapi and node js."
+       },
+       {
+          "position": "Software Developer",
+          "employer": "Silicon Practice",
+          "startDate": 1669939200,  
+          "endDate": 1672368000,    
+          "description": "In this remote role I worked to improve and maintain a product to allow customers to use doctor surgeries more effectively. This software was originally made using WordPress and a set of plugins but has been moving to Laravel with a Vue and JavaScript frontend. Most of my time was working on the Laravel side of the product building api, but I did spend time making and maintaining WordPress plugins. I used docker on a Linux PC to develop the software and Git for version control. I use nodejs for devtools like compiling frontend files."
+       },
+       {
+          "position": "Web Developer",
+          "employer": "Computer Assistance",
+          "startDate": 1535760000,  
+          "endDate": 1617168000,    
+          "description": "My role was to make and maintain custom systems for a wide range of customers using a wide range of web technologies like php and javascript. I mostly worked with Laravel on the backend and a mix for vue and angular on the front end. Sometimes a customer will need a feature added to an existing system and I had to adapt to the technologies that that customer's system is using."
+       },
+       {
+          "position": "Full Stack Developer",
+          "employer": "Brandon Cross Technologies",
+          "startDate": 1448889600,  
+          "endDate": 1535760000,    
+          "description": "I am working as a full stack developer. I work with node.js, PHP, MySQL, RESTful, and JavaScript. I have worked on award-winning iOS and Android apps using Apache Cordova. For this web-app, we used node with express and socket.io for the server, mysql for the database and a custom JavaScript framework for the browser client."
+       }
+    ],
+    "education": [
+       {
+          "institution": "University of Portsmouth",
+          "startDate": 1378713600,  
+          "endDate": 1437604800,    
+          "qualifications":[
+            {
+               "name":"Certificate of Higher Education in Computing with Merit",
+               "modules": [
+                  "Computer architecture with math",
+                  "Introduction to database design and development",
+                  "Introduction to programming",
+                  "Network fundamentals",
+                  "Web foundations",
+                  "Business information systems security",
+                  "Web-script programming"
+               ],
+               "grades": [
+                  "merit"
+               ]
+            }
+          ],
+          "description": "This degree course helped me develop my skills in lots of different areas of computing. For example, my programming has improved in areas like reliability, clarity, and efficiency. University has taught me how to self-study, time manage and work in a team. Due to the heavy requirement for written assessments, it was concluded that it would be better to focus on developing hands-on experience."
+       },
+       {
+          "institution": "Amersham & Wycombe College, Amersham",
+          "startDate": 1283750400,  
+          "endDate": 1372387200,    
+          "qualifications": [
+            {
+               "name":"BTEC Extended Diploma ICT",
+               "grades": [
+                  "distinction",
+                  "merit",
+                  "merit"
+               ]
+            },{
+               "name": "BTEC First Diploma ICT",
+               "grades": ["distinction"]
+            }
+          ]
+       },
+       {
+          "institution": "Holmer Green School, High Wycombe",
+          "startDate": 1157068800,  
+          "endDate": 1277952000,    
+          "qualifications": [
+            {
+               "name": "Level 2 National Award in ICT",
+               "grades": ["Pass"]
+            },
+            {
+               "name": "GCSE Business & Communication Systems",
+               "grades": ["C"]
+            },
+            {
+               "name": "GCSE Science",
+               "grades": ["C"]
+            },
+            {
+               "name": "GCSE Science Additional",
+               "grades": ["C"]
+            },
+            {
+               "name": "GCSE Mathematics",
+               "grades": ["D"]
+            },
+            {
+               "name": "Entry level English",
+               "grades": ["Entry Level 3"]
+            }
+         ]
+       }
+    ],
+    "interests": "I am an enthusiastic and dedicated scout leader. For nearly 4 years I have been responsible for organizing and overseeing a vibrant weekly scout group for children between the ages of 11 and 15. Additionally, I am actively involved in the local theater group, where I specialize in managing the lighting and sound aspects of performances. I thoroughly enjoy spending quality time with my wife, engaging in our shared passion for tabletop gaming, which we regularly attend at a local board game shop.I have a keen interest in all things tech-related. I have personally implemented a smart home system, complete with DIY sensors, allowing me to automate various aspects of my living space while embracing the latest technological advancements."    
+}
