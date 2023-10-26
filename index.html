@@ -53,9 +53,9 @@
                 <h1 class="text-3xl font-bold mb-2 text-theme">{{ data.name }}</h1>
                 <p class="text-lg">{{ data.address }}</p>
                 <ul class="md:flex gap-4 ">
-                    <li><b>Email:</b> <a href="email:{{ data.email }}" class="text-theme not-print underline">{{ data.email }}</a></li>
-                    <li><b>Telephone:</b> <a href="tel:{{ data.telephone }}" class="text-theme not-print underline">{{ data.telephone }}</a></li>
-                    <li><b>Website:</b> <a href="{{ data.website }}" class="text-theme not-print underline" target="_blank">{{ data.website }}</a></li>
+                    <li><b>Email:</b> <a href="email:{{ data.email }}" class="text-theme not-print underline m-2">{{ data.email }}</a></li>
+                    <li><b>Telephone:</b> <a href="tel:{{ data.telephone }}" class="text-theme not-print underline  m-2">{{ data.telephone }}</a></li>
+                    <li><b>Website:</b> <a href="{{ data.website }}" class="text-theme not-print underline  m-2" target="_blank">{{ data.website }}</a></li>
                 </ul>
             </div>
             <div class="mt-4">
@@ -66,33 +66,32 @@
 
                 <div class="mb-2">
                     <h2 class="text-xl font-semibold mb-1 text-theme border-b-4 border-theme">Experience</h2>
-                    <ul>
+                    <div>
                         {{#each data.experience}}
-                            <li class="mb-2 ">
+                            <div class="mb-2 ">
                                 <div class="justify-between text-theme flex no-flex">
                                     <h3 class="font-semibold">{{ this.employer }} - {{ this.position }}</h3>
                                     <p class="text-gray-600">{{ this.startDate }} - {{this.endDate }}</p>
                                 </div>
                                 <p>{{ this.description }}</p>
-                            </li>
+                            </div>
                         {{/each}}
-                    </ul>
+                    </div>
                 </div>
 
                 <div class="mb-4 break">
                     <h2 class="text-xl font-semibold  mb-1 text-theme text-theme border-b-4 border-theme">Education</h2>
-                    <ul>
-                        {{#each data.education}}
-                            <li class="mb-2">
-                                <div class="flex justify-between no-flex">
-                                    <h3 class="sm:flex flex-col">
-                                        <span class="font-semibold text-theme">{{ this.institution }}</span>
-                                    </h3>
-                                    <p class="text-gray-600">{{ this.startDate }} - {{this.endDate }}</p>
-                                </div>
-                                <ul class="mb-2 ">
-                                    {{#each this.qualifications}}
-                                    
+                    {{#each data.education}}
+                        <div class="mb-2">
+                            <div class="flex justify-between no-flex">
+                                <h3 class="sm:flex flex-col">
+                                    <span class="font-semibold text-theme">{{ this.institution }}</span>
+                                </h3>
+                                <p class="text-gray-600">{{ this.startDate }} - {{this.endDate }}</p>
+                            </div>
+                            <div class="mb-2 ">
+                                {{#each this.qualifications}}
+                                <div>
                                     <div class="flex flex-row justify-between me-4 gap-4 ">
                                         <p>{{ this.name }}</p>
                                         <p class="flex sm:flex-row flex-col justify-end text-right">
@@ -106,13 +105,13 @@
                                             <p>{{ this }}</p>
                                         {{/each}}
                                     </div>
-                                    {{/each}}
-                                    <p>{{ this.description }}</p>
-                                </ul>
-                                
-                            </li>
-                        {{/each}}
-                    </ul>
+                                </div>
+                                {{/each}}
+                                <p>{{ this.description }}</p>
+                            </div>
+                            
+                        </div>
+                    {{/each}}
                 </div>
 
                 <div class="mb-4">
