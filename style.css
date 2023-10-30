@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    html{
+        @apply text-white;
+    }
+    .text-theme{
+        color: #1C809B;
+    }
+    .bg-theme{
+        background-color: #156;
+    }
+    .border-theme{
+        border-color: #156;
+    }
+    .inner-bg-theme{
+        background-color: #222429;
+    }
+    .link-hover{
+        color: #1C809B;
+    }
+}
+@media (prefers-color-scheme: light) {
+    .text-theme{
+        color: #156;
+    }
+    .bg-theme{
+        background-color: #156;
+    }
+    .border-theme{
+        border-color: #156;
+    }
+    .inner-bg-theme{
+        @apply bg-white
+    }
+    .link-hover{
+        @apply text-black
+    }
+}
+
+@media print {
+    html {
+        font-size: 0.8em
+    }
+    .break {page-break-before: always;}
+    h3{
+        @apply flex-row justify-between
+    }
+    nav{
+        @apply gap-4 
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        @apply max-w-6xl mx-auto p-2
+    }
+    nav{
+        @apply flex-col 
+    }
+    h3{
+        @apply flex-col pt-1 pb-1
+    }
+}
+@media screen and (min-width: 768px) {
+    body{
+        @apply p-2
+    }
+
+    main {
+        @apply max-w-6xl mx-auto  rounded-lg shadow-md  p-6
+    }
+    nav{
+        @apply gap-4 
+    }
+
+    h3{
+        @apply flex-row justify-between pt-1 pb-1
+    }
+
+}
+html {
+    font-size: 1em;
+    font-family: 'Roboto';
+}
+body{
+    @apply bg-theme
+}
+main{
+    @apply inner-bg-theme
+}
+a {
+    @apply text-theme underline;
+    word-break: keep-all;
+}
+a:hover {
+    @apply text-black underline;
+    word-break: keep-all;
+}
+h1{
+    @apply text-3xl font-bold text-theme
+}
+h2{
+    @apply text-xl font-semibold text-theme	border-b-2 border-theme
+}
+h3{
+    @apply text-theme flex mb-2
+}
+article{
+    @apply mb-2
+}
+nav{
+    @apply flex 
+}
+table {
+    @apply w-full
+}
+time{
+    @apply text-theme
+}
+img{
+    @apply mb-2
+}
+.grades{
+    @apply text-right	
+}
+.title{
+    @apply flex flex-col items-center
+}
+.nav-icon{
+    @apply flex flex-col items-center
+}
+.hero{
+    @apply flex flex-col items-center text-2xl
+} 
+.hero > nav > a{
+    @apply no-underline;
+}
+.hero > nav > p > a:hover{
+    @apply underline;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='/style.css' rel='stylesheet'>
+
+    <title>CV</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+        <main>
+            <small>V{{data.version}}</small>
+            <section class="title">
+                <h1>{{ data.name }}</h1>
+                <p>{{ data.address }}</p>
+                <nav>
+                    <span><b>Email:</b> <a href="email:{{ data.email }}">{{ data.email }}</a></span>
+                    <span><b>Telephone:</b> <a href="tel:{{ data.telephone }}">{{ data.telephone }}</a></span>
+                    <span><b>Website:</b> <a href="{{ data.website }}" target="_blank">{{ data.website }}</a></span>
+                    <span><b>cv:</b> <a href="{{ data.cv }}" target="_blank">{{ data.cv }}</a></span>
+                </nav>
+            </div>
+            <section>
+                <h2>Personal Profile</h2>
+
+                <article>{{ data.personalProfile }}</article>
+
+                <article>
+                    <h2>Experience</h2>
+                    {{#data.experience}}
+                        <h3>
+                            <b>{{ employer }} - {{ position }}</b>
+                            <span>
+                                    <time datetime="{{ startDate }} ">{{ startDate }}</time> -
+                                    <time datetime="{{ endDate }}">{{ endDate }}</time>
+                            <span>
+                        </h3>
+                        <p>{{ description }}</p>
+                    {{/data.experience}}
+                </article>
+
+                <article class="break">
+                    <h2>Education</h2>
+                    {{#data.education}}
+                         <h3>
+                            <b>{{ institution }}</b>
+                            <span>
+                                    <time datetime="{{ startDate }} ">{{ startDate }}</time> -
+                                    <time datetime="{{ endDate }}">{{ endDate }}</time>
+                            <span>
+                        </h3>
+                        <p>{{ description }}</p>
+                        
+                            <table>
+                            {{#qualifications}}
+                                <tr>
+                                    <td>{{ name }}</td>
+                                    <td class="grades">
+                                        {{#grades}}<span class="pr-1">{{ . }}</span>{{/grades}}
+                                    </td>
+                                </tr>
+                            {{/qualifications}}
+                            </table>              
+
+                    {{/data.education}}
+                </article>
+
+                <article>
+                    <h2>Interests</h2>
+                    <p>{{ data.interests }}</p>
+                </article>
+            </div>
+        </main>
+</body>
+</html>
